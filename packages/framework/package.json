@@ -1,0 +1,19 @@
+{
+  "name": "platformize-framework",
+  "version": "0.0.1",
+  "description": "A runtime framework for platformize",
+  "scripts": {
+    "b:type": "tsc --project ./tsconfig.json --emitDeclarationOnly",
+    "b:file": "swc src --out-dir dist",
+    "b:all": "concurrently \"pnpm run b:type\" \"pnpm run b:file\""
+  },
+  "devDependencies": {
+    "@swc/cli": "latest",
+    "@swc/core": "latest",
+    "@swc/helpers": "latest",
+    "@types/node": "latest",
+    "concurrently": "^8.2.1",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}
