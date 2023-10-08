@@ -6,17 +6,17 @@ settings:
 
 dependencies:
   '@galacean/engine':
-    specifier: ^1.0.0-beta.14
-    version: 1.0.0-beta.14
+    specifier: ^1.1.0-beta.9
+    version: 1.1.0-beta.11
   '@galacean/engine-physics-lite':
-    specifier: ^1.0.0-beta.14
-    version: 1.0.0-beta.14(@galacean/engine@1.0.0-beta.14)
+    specifier: ^1.1.0-beta.11
+    version: 1.1.0-beta.11(@galacean/engine@1.1.0-beta.11)
   '@galacean/engine-toolkit-controls':
     specifier: ^1.0.0-beta.3
-    version: 1.0.0-beta.3(@galacean/engine@1.0.0-beta.14)
+    version: 1.0.0-beta.3(@galacean/engine@1.1.0-beta.11)
   '@galacean/engine-toolkit-stats':
     specifier: ^1.0.0-beta.2
-    version: 1.0.0-beta.2(@galacean/engine@1.0.0-beta.14)
+    version: 1.0.0-beta.2(@galacean/engine@1.1.0-beta.11)
   '@microsoft/rush':
     specifier: ^5.100.1
     version: 5.100.1
@@ -36,8 +36,8 @@ dependencies:
     specifier: ^0.7.9
     version: 0.7.9
   platformize-galacean:
-    specifier: ^0.3.0
-    version: 0.3.0
+    specifier: ^0.4.0
+    version: 0.4.0
 
 devDependencies:
   minigame-api-typings:
@@ -363,69 +363,69 @@ packages:
       stackframe: 1.3.4
     dev: false
 
-  /@galacean/engine-core@1.0.0-beta.14:
-    resolution: {integrity: sha512-PI7VqkKFImri3HOuAAcHTlsl04IH+8MdiAQf6u8lSl4XSKsYtlPvrXY3Bj+pEJq9FsP2iB8yAnRZQCwXGImI1w==}
+  /@galacean/engine-core@1.1.0-beta.11:
+    resolution: {integrity: sha512-CAwz15xkMnB2F3dox02wQLY5pampMTMfTiTgeKS49Pa3qsHzw+ttAzukZcZ1UdSHfm2kr742M0YG2FJH1Kd2oA==}
     dependencies:
-      '@galacean/engine-math': 1.0.0-beta.14
+      '@galacean/engine-math': 1.1.0-beta.11
     dev: false
 
-  /@galacean/engine-draco@1.0.0-beta.14:
-    resolution: {integrity: sha512-FqomiPEIQ4fSttCYPy3jDfLicgtYnYtdNXmPx5E078i6ucJu5GPmdY7lNVw0vWOvf07q4gjfceLIiRPL/q9kYg==}
+  /@galacean/engine-draco@1.1.0-beta.11:
+    resolution: {integrity: sha512-aX9enLtVouzsx3fAjpaWhMBerqvl27MX1LsxWvGn0mAW0bXceMG7Y2Op16M86d518hkUWfBkyeF4c5I1fuWc2A==}
     dependencies:
-      '@galacean/engine-core': 1.0.0-beta.14
+      '@galacean/engine-core': 1.1.0-beta.11
     dev: false
 
-  /@galacean/engine-loader@1.0.0-beta.14:
-    resolution: {integrity: sha512-FhjuvMoyfcyTtbJqPgesFni8QouP1ulYbZT9LtignrWyO5n9swBCBWo9Or627OxLMTk9rl7UkUozacbdQCfsIA==}
+  /@galacean/engine-loader@1.1.0-beta.11:
+    resolution: {integrity: sha512-VqW83NycT744qxVZtFoZSFa6aeqNSEn/tKTIPwA8ixbVd1crW5wqk9+lmECIWhyrhQNqrN/ZjQhkEXtbHWWBmg==}
     dependencies:
-      '@galacean/engine-core': 1.0.0-beta.14
-      '@galacean/engine-draco': 1.0.0-beta.14
-      '@galacean/engine-math': 1.0.0-beta.14
-      '@galacean/engine-rhi-webgl': 1.0.0-beta.14
+      '@galacean/engine-core': 1.1.0-beta.11
+      '@galacean/engine-draco': 1.1.0-beta.11
+      '@galacean/engine-math': 1.1.0-beta.11
+      '@galacean/engine-rhi-webgl': 1.1.0-beta.11
     dev: false
 
-  /@galacean/engine-math@1.0.0-beta.14:
-    resolution: {integrity: sha512-zGfL29eLwkZBAAXvFzZUwFFS9jM3qZtgTyChYvKKOFXRXQ7vx+Y/N/aPX5eLOMiL/xUauXlMdSEOAzONSK+Mdg==}
+  /@galacean/engine-math@1.1.0-beta.11:
+    resolution: {integrity: sha512-iG2jMxUCq6FwY0TaQnBEiG+0y8WAPJovKqWwbfEewax0OMDL2eC3GGzn3ww1rSzqg4Ts+WjlB1Ok3jNr2csYmw==}
     dev: false
 
-  /@galacean/engine-physics-lite@1.0.0-beta.14(@galacean/engine@1.0.0-beta.14):
-    resolution: {integrity: sha512-1Fh64rN3yXeSbxiRlKX+mmug0X31Rd+O89LrCly4r+PvOzjJidbPjcV2dNz76oh5ft9w4fBJTnyWuWSEZUXbQA==}
+  /@galacean/engine-physics-lite@1.1.0-beta.11(@galacean/engine@1.1.0-beta.11):
+    resolution: {integrity: sha512-4HtNiGdGwX0IVnV/ng6dMBvUup/jduiHV7EpZInEIdDysct+6Btta7cD/Jf3QYhaLd98/fkh0g0vKrpGEnWNjQ==}
     peerDependencies:
-      '@galacean/engine': 1.0.0-beta.14
+      '@galacean/engine': 1.1.0-beta.11
     dependencies:
-      '@galacean/engine': 1.0.0-beta.14
+      '@galacean/engine': 1.1.0-beta.11
     dev: false
 
-  /@galacean/engine-rhi-webgl@1.0.0-beta.14:
-    resolution: {integrity: sha512-0Lg4Exr0u0eVbp9Pfuk1uXzNTpgv0f5WWNlpoh+gJLJsx1g/PYRU2E9nzXwQF6DOFffyPBZ1sQMAqOEBv7edGQ==}
+  /@galacean/engine-rhi-webgl@1.1.0-beta.11:
+    resolution: {integrity: sha512-y1Pwx97K33PJZVPETPXY8ahhLbgus3ub17xDKiYr/aY7dW0nRsixCbyQo6g7TKl9m5FRAan5eVAHY8NBxh1iaQ==}
     dependencies:
-      '@galacean/engine-core': 1.0.0-beta.14
-      '@galacean/engine-math': 1.0.0-beta.14
+      '@galacean/engine-core': 1.1.0-beta.11
+      '@galacean/engine-math': 1.1.0-beta.11
     dev: false
 
-  /@galacean/engine-toolkit-controls@1.0.0-beta.3(@galacean/engine@1.0.0-beta.14):
+  /@galacean/engine-toolkit-controls@1.0.0-beta.3(@galacean/engine@1.1.0-beta.11):
     resolution: {integrity: sha512-tKxF0bkPPSwJJ5ZJFGwu83Bs4nKvppFNm0zFB5sQu64BJi6ACtJmMo/RY+gngwwYrLV67jVeJNvSV4/+FYSsMA==}
     peerDependencies:
       '@galacean/engine': ^1.0.0-alpha
     dependencies:
-      '@galacean/engine': 1.0.0-beta.14
+      '@galacean/engine': 1.1.0-beta.11
     dev: false
 
-  /@galacean/engine-toolkit-stats@1.0.0-beta.2(@galacean/engine@1.0.0-beta.14):
+  /@galacean/engine-toolkit-stats@1.0.0-beta.2(@galacean/engine@1.1.0-beta.11):
     resolution: {integrity: sha512-h2JnCUsotYwzooHK531O16mU+4KA1SRCHty0GsAhYgR4K0xjGWSJPvdt2m4V22EwUMD2yCv7ubLo+FJgc/xYDw==}
     peerDependencies:
       '@galacean/engine': ^1.0.0-alpha
     dependencies:
-      '@galacean/engine': 1.0.0-beta.14
+      '@galacean/engine': 1.1.0-beta.11
     dev: false
 
-  /@galacean/engine@1.0.0-beta.14:
-    resolution: {integrity: sha512-K4y1BZGPrDmY3iS1R1+orJYbnPLbsu+O1BbrachR+RVOyyMaBwoBaVp3GiNzu6ff32VW4JYbnpAOHjU4V6Rwpw==}
+  /@galacean/engine@1.1.0-beta.11:
+    resolution: {integrity: sha512-OPDoGDLnCu8znxP3OhSVoAA8gkawV+vFWvwtYMdZ8DUo1Wnlb7YRiTzDC8GUUIn9xN2Q+4D/wBJLeAB66641jw==}
     dependencies:
-      '@galacean/engine-core': 1.0.0-beta.14
-      '@galacean/engine-loader': 1.0.0-beta.14
-      '@galacean/engine-math': 1.0.0-beta.14
-      '@galacean/engine-rhi-webgl': 1.0.0-beta.14
+      '@galacean/engine-core': 1.1.0-beta.11
+      '@galacean/engine-loader': 1.1.0-beta.11
+      '@galacean/engine-math': 1.1.0-beta.11
+      '@galacean/engine-rhi-webgl': 1.1.0-beta.11
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -3902,8 +3902,8 @@ packages:
       find-up: 5.0.0
     dev: false
 
-  /platformize-galacean@0.3.0:
-    resolution: {integrity: sha512-0xARd0BxO7kV+h/xRZaea7zwp/Kzm1b/RIpdNLL176XIMnxztJ1P0NLtfAKO82CWr6SFcJpH30Lr8L6N98hRSA==}
+  /platformize-galacean@0.4.0:
+    resolution: {integrity: sha512-x4e//FdZBNVWuLxbPQ4Yifdds3yiU3WeQFTUyDuUDxqY9x8nSXitHnir+W5Gs3XKKGT+3lUBh0BjIXkIQl9LGw==}
     dependencies:
       minigame-api-typings: 3.7.4
       platformize: 1.0.2

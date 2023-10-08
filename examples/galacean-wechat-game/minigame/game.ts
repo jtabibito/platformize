@@ -1,4 +1,4 @@
-import { WechatGamePlatform, PlatformManager } from "platformize-galacean";
+import { WechatGamePlatform, PlatformManager, WechatGameProgram as Program } from "platformize-galacean";
 // import { Demo as Demo1 } from "./demo";
 // import { Demo as Demo2 } from "./demo2";
 // import { Demo as Demo3 } from "./demo3";
