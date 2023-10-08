@@ -12,18 +12,37 @@ export class WechatGameProgram extends ProgramBase {
 
     const performance = window.performance;
 
-    const ts_firstContentfulPaint = performance.now();
+    const ts_engineInit = performance.now();
+
+    // 创建引擎
+    let engine = undefined;
+    if (process.createEngine) {
+      engine = await asyncFuncSpy.call(this, process.createEngine, "createEngine");
+    }
+
+    stats.ts_engineInit = performance.now() - ts_engineInit;
+
+    // 工程加载开始时间
     const ts_projectLoad = performance.now();
 
-    process.loadResources && await asyncFuncSpy(process.loadResources);
+    // 加载资源
+    let resources = undefined;
+    if (process.loadResources) {
+      resources = await asyncFuncSpy.call(this, process.loadResources, engine, "loadResources");
+    }
     stats.ts_projectLoad = performance.now() - ts_projectLoad;
-    console.log(`项目加载耗时:${stats.ts_projectLoad}`);
 
-    process.onResourceLoaded && await asyncFuncSpy(process.onResourceLoaded);
+    // 首屏渲染开始时间
+    const ts_firstScreenPaint = performance.now();
 
-    process.start && await asyncFuncSpy(process.start);
-    stats.ts_firstContentfulPaint = performance.now() - ts_firstContentfulPaint;
-    console.log(`首屏渲染耗时:${stats.ts_firstContentfulPaint}`);
+    // 资源加载完成
+    process.onResourceLoaded && await asyncFuncSpy.call(this, process.onResourceLoaded, resources, "resourceLoaded");
+
+    // 执行业务逻辑
+    process.start && await asyncFuncSpy.call(this, process.start, engine, "start");
+    stats.ts_firstScreenPaint = performance.now() - ts_firstScreenPaint;
+
+    stats.ts_firstContentfulPaint = performance.now() - ts_engineInit;
 
     return 0;
   }
