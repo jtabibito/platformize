@@ -1,7 +1,7 @@
 /// <reference types="minigame-api-typings" />
 /// <reference types="@types/offscreencanvas" />
 
-export { WechatGameProgram } from './Program';
+export { WechatGameProgram } from '../framework/Program';
 
 import { WechatGamePlatform as WechatGamePlatformBase } from 'platformize';
 import { Touch, TouchEvent } from 'platformize/dist/base/EventTarget';
