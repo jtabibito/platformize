@@ -1,4 +1,4 @@
-import { Program as ProgramBase, asyncFuncSpy } from "platformize-framework/dist";
+import { Program as ProgramBase, asyncFuncSpy } from "../platformize-framework/src";
 import { GalaceanStatsInfo } from "./Stats/GalaceanStats";
 
 export class WechatGameProgram extends ProgramBase {
@@ -59,7 +59,8 @@ export class WechatGameProgram extends ProgramBase {
       filePath: `${wx.env.USER_DATA_PATH}/stats.json`,
       data: JSON.stringify(WechatGameProgram.stats),
       encoding: 'utf8',
-      success() {
+      success(res) {
+        console.log(res);
         console.log('cache stats success: ' + `${wx.env.USER_DATA_PATH}/stats.json`);
       },
       fail() {
