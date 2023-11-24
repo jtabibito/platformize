@@ -3,7 +3,7 @@ import type { Plugin } from 'rollup';
 
 type platformizeOptions = Parameters<typeof platformize>['0'];
 
-export const DEFAULT_API_LIST = [...DEFAULT_API_LIST_BAE, '$defaultWebGLExtensions', 'fonts'];
+export const DEFAULT_API_LIST = [...DEFAULT_API_LIST_BAE, '$defaultWebGLExtensions', 'fonts', 'URLSearchParams'];
 
 export default function platformizeGalacean({
   apiList = DEFAULT_API_LIST,

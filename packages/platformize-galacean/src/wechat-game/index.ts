@@ -8,6 +8,7 @@ import { Touch, TouchEvent } from 'platformize/dist/base/EventTarget';
 import { createImage, createVideo } from '../base/utils/helper';
 import { $FontFaceSet } from '../base/Font';
 import $window from '../base/window';
+import { $URLSearchParams } from '../base/URLSearchParams';
 import type { Polyfill } from '../Platform';
 
 const wxGame = wx as unknown as WechatMinigame.Wx;
@@ -44,6 +45,9 @@ export class WechatGamePlatform extends WechatGamePlatformBase {
     this.polyfill.window['setTimeout'] = $window.setTimeout;
     this.polyfill.Blob = this.polyfill.window['Blob'];
     this.polyfill.OffscreenCanvas = OffscreenCanvas;
+
+    this.polyfill.window['URLSearchParams'] = $URLSearchParams;
+    this.polyfill.URLSearchParams = $URLSearchParams;
 
     this.polyfill.$defaultWebGLExtensions = { OES_vertex_array_object: null };
     this.polyfill.HTMLCanvasElement = canvas.constructor as unknown as HTMLCanvasElement;

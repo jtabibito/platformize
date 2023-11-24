@@ -6,6 +6,7 @@ import { Touch, TouchEvent } from 'platformize/dist/base/EventTarget';
 import { createImage, createVideoContext } from '../base/utils/helper';
 import { $FontFaceSet } from '../base/Font';
 import $window from '../base/window';
+import { $URLSearchParams } from '../base/URLSearchParams';
 import type { Polyfill } from '../Platform';
 
 // 微信小游戏创建离屏画布api变成了createOffScreenCanvas
@@ -40,6 +41,9 @@ export class WechatPlatform extends WechatPlatformBase {
     this.polyfill.window['setTimeout'] = $window.setTimeout;
     this.polyfill.Blob = this.polyfill.window['Blob'];
     this.polyfill.OffscreenCanvas = OffscreenCanvas;
+
+    this.polyfill.window['URLSearchParams'] = $URLSearchParams;
+    this.polyfill.URLSearchParams = $URLSearchParams;
 
     this.polyfill.$defaultWebGLExtensions = { OES_vertex_array_object: null };
     this.polyfill.HTMLCanvasElement = canvas.constructor as unknown as HTMLCanvasElement;
