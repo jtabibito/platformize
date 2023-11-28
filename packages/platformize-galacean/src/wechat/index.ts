@@ -109,4 +109,19 @@ export class WechatPlatform extends WechatPlatformBase {
       }
     }
   }
+
+  dispose() {
+    this.disableDeviceOrientation();
+    // 缓解ios内存泄漏, 前后进出页面多几次，降低pixelRatio也可行
+    this.canvas.width = 0;
+    this.canvas.height = 0;
+    // @ts-ignore
+    if (this.canvas) this.canvas.ownerDocument = null;
+    // @ts-ignore
+    this.onDeviceMotionChange = null;
+    // @ts-ignore
+    this.canvas = null;
+    // @ts-ignore
+    this.fonts = null;
+  }
 }
