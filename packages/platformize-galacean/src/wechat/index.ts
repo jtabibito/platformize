@@ -77,8 +77,8 @@ export class WechatPlatform extends WechatPlatformBase {
 
     this.canvas.dispatchEvent(event);
 
-    if (changedTouches.length) {
-      const touch = changedTouches[0];
+    for (let i = 0, n = changedTouches.length; i < n; ++i) {
+      const touch = changedTouches[i];
       const pointerEvent = {
         clientX: touch.clientX,
         clientY: touch.clientY,

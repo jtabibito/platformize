@@ -1,8 +1,6 @@
 /// <reference types="minigame-api-typings" />
 /// <reference types="@types/offscreencanvas" />
 
-export { WechatGameProgram } from '../framework/Program';
-
 import { WechatGamePlatform as WechatGamePlatformBase } from 'platformize';
 import { Touch, TouchEvent } from 'platformize/dist/base/EventTarget';
 import { createImage, createVideo } from '../base/utils/helper';
@@ -81,8 +79,8 @@ export class WechatGamePlatform extends WechatGamePlatformBase {
 
     this.canvas.dispatchEvent(event);
 
-    if (changedTouches.length) {
-      const touch = changedTouches[0];
+    for (let i = 0, n = changedTouches.length; i < n; ++i) {
+      const touch = changedTouches[i];
       const pointerEvent = {
         clientX: touch.clientX,
         clientY: touch.clientY,
