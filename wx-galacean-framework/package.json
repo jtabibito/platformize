@@ -1,0 +1,29 @@
+{
+  "name": "@engine-runtime-framework/galacean-engine",
+  "version": "1.0.0-beta.0",
+  "description": "A framework for collecting galacean engine runtime stats",
+  "author": "JTabibito<jtabibito@vip.qq.com>",
+  "license": "MIT",
+  "files": [
+    "./dist"
+  ],
+  "main": "./dist",
+  "scripts": {
+    "b:type": "tsc --project ./tsconfig.json --emitDeclarationOnly",
+    "b:file": "swc src --out-dir dist",
+    "b:all": "concurrently \"pnpm run b:type\" \"pnpm run b:file\""
+  },
+  "dependencies": {
+    "engine-framework": "^1.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10",
+    "typescript": "^5.5.2",
+    "@types/node": "latest",
+    "@swc/cli": "latest",
+    "@swc/core": "latest",
+    "@swc/helpers": "latest",
+    "concurrently": "^8.2.2",
+    "minigame-api-typings": "^3.8.4"
+  }
+}

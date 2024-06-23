@@ -1,0 +1,25 @@
+{
+  "name": "engine-framework",
+  "version": "1.0.0",
+  "description": "A framework for collecting engine runtime stats",
+  "author": "JTabibito<jtabibito@vip.qq.com>",
+  "license": "MIT",
+  "files": [
+    "./dist"
+  ],
+  "main": "./dist",
+  "scripts": {
+    "b:type": "tsc --project ./tsconfig.json --emitDeclarationOnly",
+    "b:file": "swc src --out-dir dist",
+    "b:all": "concurrently \"pnpm run b:type\" \"pnpm run b:file\""
+  },
+  "devDependencies": {
+    "@swc/cli": "latest",
+    "@swc/core": "latest",
+    "@swc/helpers": "latest",
+    "@types/node": "latest",
+    "concurrently": "^8.2.2",
+    "ts-node": "^10",
+    "typescript": "^5.5.2"
+  }
+}
