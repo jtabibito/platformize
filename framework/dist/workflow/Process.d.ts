@@ -1,4 +1,4 @@
-export interface IProcess {
+export declare class IProcess {
     createEngine?: () => void;
     loadResources?: () => void;
     onResourceLoaded?: () => void;
