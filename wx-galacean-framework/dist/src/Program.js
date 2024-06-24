@@ -1,4 +1,3 @@
-// @ts-ignore
 function _assert_this_initialized(self) {
     if (self === void 0) {
         throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -208,7 +207,7 @@ function _ts_generator(thisArg, body) {
         };
     }
 }
-import { Program, asyncFuncSpy } from "engine-framework";
+import { Program, asyncFuncSpy } from "@engine-framework/framework";
 export var WechatMiniGameProgram = /*#__PURE__*/ function(Program) {
     "use strict";
     _inherits(WechatMiniGameProgram, Program);

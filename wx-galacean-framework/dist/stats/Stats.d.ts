@@ -1,4 +1,4 @@
-import { IStats } from "engine-framework";
+import { IStats } from "@engine-framework/framework";
 /**
  * GalaceanStats
  * @description 提供 Galacean 统计数据

@@ -1,5 +1,4 @@
-// @ts-ignore
-import { IStats } from "engine-framework";
+import { IStats } from "@engine-framework/framework";
 
 /**
  * GalaceanStats

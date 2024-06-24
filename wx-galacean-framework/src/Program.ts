@@ -1,5 +1,4 @@
-// @ts-ignore
-import { Program, IProcess , asyncFuncSpy } from "engine-framework";
+import { Program, IProcess , asyncFuncSpy } from "@engine-framework/framework";
 import { GalaceanStats } from "./stats";
 
 export class WechatMiniGameProgram extends Program {

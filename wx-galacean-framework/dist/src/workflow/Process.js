@@ -1,4 +1,3 @@
-// @ts-ignore
 function _assert_this_initialized(self) {
     if (self === void 0) {
         throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -70,7 +69,7 @@ function _create_super(Derived) {
         return _possible_constructor_return(this, result);
     };
 }
-import { IProcess } from "engine-framework";
+import { IProcess } from "@engine-framework/framework";
 export var GalaceanProcess = /*#__PURE__*/ function(IProcess) {
     "use strict";
     _inherits(GalaceanProcess, IProcess);

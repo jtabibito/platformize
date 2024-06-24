@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@engine-framework/framework':
-    specifier: ^0.0.1
-    version: 0.0.1
+    specifier: 0.0.1-beta.0
+    version: 0.0.1-beta.0
 
 devDependencies:
   '@swc/cli':
@@ -51,8 +51,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@engine-framework/framework@0.0.1:
-    resolution: {integrity: sha512-H/hKZE/JyBg2lDP1tO1TlT5pQSxtg3fTfNcdihuKSplDhMs2sHS1j0YdhIfNlri/6tSi8B7qnFsI5+bmAWiJMw==}
+  /@engine-framework/framework@0.0.1-beta.0:
+    resolution: {integrity: sha512-Y9596RLhrI6p4siCs0ctJg+1EI+ancrux8J4O8Dozp4FZZTKXJT9Qhn8de0yVSYLcFiLYfvMN21oLLFYdnnQjA==}
     dev: false
 
   /@jridgewell/resolve-uri@3.1.2:

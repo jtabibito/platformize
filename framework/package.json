@@ -1,6 +1,6 @@
 {
   "name": "@engine-framework/framework",
-  "version": "0.0.1",
+  "version": "0.0.1-beta.0",
   "description": "A framework for collecting engine runtime stats",
   "author": "JTabibito<jtabibito@vip.qq.com>",
   "license": "MIT",
@@ -8,6 +8,7 @@
     "./dist"
   ],
   "main": "./dist/src/index.js",
+  "types": "./dist",
   "scripts": {
     "b:type": "tsc --project ./tsconfig.json --emitDeclarationOnly",
     "b:file": "swc src --out-dir dist",
@@ -21,8 +22,5 @@
     "concurrently": "^8.2.2",
     "ts-node": "^10",
     "typescript": "^5.5.2"
-  },
-  "publishConfig": {
-    "access":"restricted"
   }
 }

@@ -1,4 +1,3 @@
-// @ts-ignore
 function _assert_this_initialized(self) {
     if (self === void 0) {
         throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -83,7 +82,7 @@ function _create_super(Derived) {
         return _possible_constructor_return(this, result);
     };
 }
-import { IStats } from "engine-framework";
+import { IStats } from "@engine-framework/framework";
 /**
  * GalaceanStats
  * @description 提供 Galacean 统计数据
