@@ -1,6 +1,6 @@
 {
   "name": "@engine-framework/galacean-engine",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A framework for collecting galacean engine runtime stats",
   "author": "JTabibito<jtabibito@vip.qq.com>",
   "license": "MIT",

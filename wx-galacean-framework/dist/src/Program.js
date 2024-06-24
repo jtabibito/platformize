@@ -338,12 +338,12 @@ export var WechatMiniGameProgram = /*#__PURE__*/ function(Program) {
                                         data: JSON.stringify(WechatMiniGameProgram.stats),
                                         encoding: 'utf8',
                                         // @ts-ignore
-                                        success: function success(res) {
-                                            console.log(res);
+                                        success: function(res) {
                                             console.log('cache stats success: ' + "".concat(wxGame.env.USER_DATA_PATH, "/stats.json"));
                                         },
-                                        fail: function fail() {
-                                            console.error('write stats failed');
+                                        // @ts-ignore
+                                        fail: function(res) {
+                                            console.error('write stats failed', res);
                                         }
                                     })
                                 ];

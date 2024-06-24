@@ -63,13 +63,13 @@ export class WechatMiniGameProgram extends Program {
       data: JSON.stringify(WechatMiniGameProgram.stats),
       encoding: 'utf8',
       // @ts-ignore
-      success(res) {
-        console.log(res);
+      success: (res => {
         console.log('cache stats success: ' + `${wxGame.env.USER_DATA_PATH}/stats.json`);
-      },
-      fail() {
-        console.error('write stats failed');
-      },
+      }),
+      // @ts-ignore
+      fail: (res => {
+        console.error('write stats failed', res);
+      })
     });
 
     return 0;
