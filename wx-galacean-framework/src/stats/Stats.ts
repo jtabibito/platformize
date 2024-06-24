@@ -1,10 +1,11 @@
-import { IStats } from "engine-runtime-framework";
+// @ts-ignore
+import { IStats } from "engine-framework";
 
 /**
  * GalaceanStats
  * @description 提供 Galacean 统计数据
  */
-export interface GalaceanStats extends IStats {
+export class GalaceanStats extends IStats {
   ts_engineInit?: number; // 引擎初始化时间
   ts_projectLoad?: number; // 项目加载完成时间
   ts_firstContentfulPaint?: number; // 首屏绘制内容时间

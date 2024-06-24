@@ -1,3 +1,4 @@
+// @ts-ignore
 function _assert_this_initialized(self) {
     if (self === void 0) {
         throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -207,7 +208,7 @@ function _ts_generator(thisArg, body) {
         };
     }
 }
-import { Program, asyncFuncSpy } from "engine-runtime-framework";
+import { Program, asyncFuncSpy } from "engine-framework";
 export var WechatMiniGameProgram = /*#__PURE__*/ function(Program) {
     "use strict";
     _inherits(WechatMiniGameProgram, Program);
@@ -233,6 +234,7 @@ export var WechatMiniGameProgram = /*#__PURE__*/ function(Program) {
                                         1
                                     ];
                                 }
+                                // @ts-ignore
                                 stats = WechatMiniGameProgram.stats = {};
                                 performance = window.performance;
                                 ts_engineInit = performance.now();
@@ -333,6 +335,7 @@ export var WechatMiniGameProgram = /*#__PURE__*/ function(Program) {
                                     4,
                                     fs.writeFile({
                                         filePath: "".concat(wxGame.env.USER_DATA_PATH, "/stats.json"),
+                                        // @ts-ignore
                                         data: JSON.stringify(WechatMiniGameProgram.stats),
                                         encoding: 'utf8',
                                         // @ts-ignore

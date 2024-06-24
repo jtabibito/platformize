@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  engine-framework:
-    specifier: ^1.0.0
-    version: 1.0.0
+  '@engine-framework/framework':
+    specifier: ^0.0.1
+    version: 0.0.1
 
 devDependencies:
   '@swc/cli':
@@ -50,6 +50,10 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
+
+  /@engine-framework/framework@0.0.1:
+    resolution: {integrity: sha512-H/hKZE/JyBg2lDP1tO1TlT5pQSxtg3fTfNcdihuKSplDhMs2sHS1j0YdhIfNlri/6tSi8B7qnFsI5+bmAWiJMw==}
+    dev: false
 
   /@jridgewell/resolve-uri@3.1.2:
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
@@ -529,10 +533,6 @@ packages:
     dependencies:
       once: 1.4.0
     dev: true
-
-  /engine-framework@1.0.0:
-    resolution: {integrity: sha512-U/eSNFqDJzLFT6V5NcBAp6gO44FV1ZaH5XRkrYox7e0UhBVj0WRk9Fv05RTyd8u3exngE7ZXMXXKTj/3p6/qpA==}
-    dev: false
 
   /escalade@3.1.2:
     resolution: {integrity: sha512-ErCHMCae19vR8vQGe50xIsVomy19rg6gFu3+r3jkEO46suLMWBksvVyoGgQV+jOfl84ZSOSlmv6Gxa89PmTGmA==}

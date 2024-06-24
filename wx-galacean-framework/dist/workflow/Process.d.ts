@@ -1,3 +1,3 @@
-import { IProcess } from "engine-runtime-framework";
-export interface GalaceanProcess extends IProcess {
+import { IProcess } from "engine-framework";
+export declare class GalaceanProcess extends IProcess {
 }

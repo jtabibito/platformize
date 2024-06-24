@@ -1,9 +1,9 @@
-import { IStats } from "engine-runtime-framework";
+import { IStats } from "engine-framework";
 /**
  * GalaceanStats
  * @description 提供 Galacean 统计数据
  */
-export interface GalaceanStats extends IStats {
+export declare class GalaceanStats extends IStats {
     ts_engineInit?: number;
     ts_projectLoad?: number;
     ts_firstContentfulPaint?: number;

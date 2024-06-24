@@ -1,4 +1,5 @@
-import { Program, IProcess , asyncFuncSpy } from "engine-runtime-framework";
+// @ts-ignore
+import { Program, IProcess , asyncFuncSpy } from "engine-framework";
 import { GalaceanStats } from "./stats";
 
 export class WechatMiniGameProgram extends Program {
@@ -8,6 +9,7 @@ export class WechatMiniGameProgram extends Program {
       return 1;
     }
 
+    // @ts-ignore
     const stats = WechatMiniGameProgram.stats = {} as GalaceanStats;
 
     const performance = window.performance;
@@ -58,6 +60,7 @@ export class WechatMiniGameProgram extends Program {
 
     await fs.writeFile({
       filePath: `${wxGame.env.USER_DATA_PATH}/stats.json`,
+      // @ts-ignore
       data: JSON.stringify(WechatMiniGameProgram.stats),
       encoding: 'utf8',
       // @ts-ignore

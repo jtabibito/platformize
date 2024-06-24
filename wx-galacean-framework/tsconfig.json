@@ -4,11 +4,15 @@
     "lib": ["es6", "DOM"],
     "module": "CommonJS",
     "declaration": true,
+    "rootDir": "./src",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "noEmit": false,
+    "noEmitOnError": false
   },
   "include": ["./src"]
 }

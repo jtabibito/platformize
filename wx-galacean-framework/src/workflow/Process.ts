@@ -1,3 +1,4 @@
-import { IProcess } from "engine-runtime-framework";
+// @ts-ignore
+import { IProcess } from "engine-framework";
 
-export interface GalaceanProcess extends IProcess { }
+export class GalaceanProcess extends IProcess { }

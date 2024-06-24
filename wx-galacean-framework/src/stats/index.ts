@@ -1,3 +1,1 @@
-import { GalaceanStats } from "./Stats";
-
-export { GalaceanStats };
+export * from "./Stats";
